@@ -1,0 +1,259 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Чорний фон */
+    color: #FFFFFF; /* Білий текст */
+}
+
+/* Шапка */
+header {
+    text-align: center; /* Вирівнювання по центру */
+    padding: 20px;
+    background-color: #C91A1A; /* Яскраво-червоний фон */
+    border-bottom: 3px solid #000; /* Чорна лінія під шапкою */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #FFFFFF; /* Білий текст */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Чорна тінь */
+}
+
+/* Меню навігації */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Білий текст посилань */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #000; /* Чорний фон пунктів меню */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF; /* Білий фон при наведенні */
+    color: #C91A1A; /* Червоний текст при наведенні */
+}
+
+/* Секція з автомобілями */
+section {
+    padding: 20px;
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.car-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.car-description {
+    background-color: #ffffff; /* Білий фон для опису */
+    color: #000000; /* Чорний текст для опису */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.car-description h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.car-description p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #C91A1A; /* Червоний фон */
+    color: #FFFFFF; /* Білий текст */
+    margin-top: 20px;
+}
+/* Стилі для секції на головній сторінці */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Відстань між елементами */
+    padding: 20px;
+}
+
+.image-left, .image-right {
+    flex: 1; /* Відповідальні блоки з фото */
+    text-align: center;
+}
+
+.text-center {
+    flex: 2; /* Ширший блок для тексту */
+    text-align: center;
+    color: #FFFFFF; /* Білий текст */
+    background-color: #C91A1A; /* Червоний фон для тексту */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Основний контейнер */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Текстова колонка */
+/* Стиль для текстової колонки */
+.text-column {
+    flex: 1 1 50%; /* Займає половину ширини */
+    color: #FFFFFF; /* Білий текст */
+    line-height: 1.6; /* Комфортна висота рядка */
+    font-size: 1.1em; /* Трохи більший розмір тексту */
+}
+
+}
+
+/* Галерея зображень */
+.image-gallery {
+    flex: 1 1 50%; /* Займає половину ширини */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 48%; /* Зображення займають половину ширини секції */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+}
+/* Секція контактів */
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Дві колонки */
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Інформація про контакти */
+.contact-info {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Фото офісу */
+.contact-photo {
+    text-align: center;
+}
+
+.contact-image {
+    width: 90%; /* Збільшуємо розмір фото */
+    border-radius: 10px; /* Заокруглені краї */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Форма */
+.contact-form {
+    grid-column: span 2; /* Займає дві колонки */
+    background-color: #C91A1A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.contact-form button {
+    background-color: #FFFFFF;
+    color: #C91A1A;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #C91A1A;
+    color: #FFFFFF;
+}
+/* Секція про автора */
+.about-author {
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Фото команди */
+.team-photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-image {
+    width: 80%; /* Збільшуємо розмір фото */
+    max-width: 600px; /* Максимальна ширина фото */
+    border-radius: 10px; /* Заокруглені краї */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
